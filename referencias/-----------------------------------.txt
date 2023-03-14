@@ -9,3 +9,12 @@ usuario principal
 -----------------------------------------------------------------------
 correo: administracion@mime-soft.com
 password: u?~%Jn6efjr8
+
+-----------------------------------------------------------------------
+token git-hub cpanel :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
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+como eliminar un archivo que no quiere
+-----------------------------------------------------------------------
+crear un ftp y conectar a filezila y revisar el video de yotube guardado
