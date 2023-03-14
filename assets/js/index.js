@@ -25,7 +25,19 @@ document.addEventListener("DOMContentLoaded", ()=> {
   muestraNavBar('#barraNavegacion')
   scrollButton('#botonScroll')
 
-})
+}) 
+window.addEventListener("load", ()=> {
+
+  setTimeout(() => {
+    ocultarLoader()
+  }, 500);
+
+}) 
+
+const ocultarLoader = () => {
+  let loader = document.querySelector(".loader");
+  loader.style.display="none";
+}
 
 const showShowMore = (element) => {
   let number = element.dataset.show;
