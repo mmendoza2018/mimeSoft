@@ -1,0 +1,230 @@
+:root {
+  --pink-primary: #b82ccb;
+  --pink-secondary: #cc44cc;
+  --purple-primary: #1d1851;
+  --purple-secondary: #49346e;
+  --blue-primary: #1512e4;
+  --blue-secondary: #015ffb;
+  --grey-primary: #98accb;
+  --white: rgb(255, 255, 255);
+}
+@font-face {
+  font-family: "Poppins regular";
+  src: url("../fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Poppins light";
+  src: url("../fonts/Poppins/Poppins-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Poppins medium";
+  src: url("../fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Poppins bold";
+  src: url("../fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Poppins extraBold";
+  src: url("../fonts/Poppins/Poppins-ExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Poppins-Regular";
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+h1,
+h2 {
+  font-family: "Poppins extraBold";
+}
+h3,
+h4,
+h5 {
+  font-family: "Poppins medium" !important;
+}
+.show-options {
+  opacity: 1 !important;
+  z-index: 1000 !important;
+}
+
+/* codigo actual */
+
+.container_1 {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+@media (min-width: 640px) { 
+  .container_1 {
+    padding: 0 4rem;
+  }
+}
+
+.container__fluid_1 {
+  width: 100%;
+}
+
+.img_principal {
+  position: relative;
+  background-image: url("../img/nordwood-themes-kRNZiGKtz48-unsplash.webp");
+  background-position: -500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+@media (min-width: 640px) { 
+  .img_principal {
+    background-position: center;
+  }
+}
+
+.img_principal_degradado {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
+  background: linear-gradient(360deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.container_espiral {
+  width: 100%;
+  position: absolute;
+  top: -20%;
+  left: -25%;
+}
+
+.container_espiral img {
+  width: 60%;
+}
+@media (min-width: 640px) { 
+  .container_espiral {
+    top: -30%;
+    left: -25%;
+  }
+  .container_espiral img {
+    width: 42%;
+  }
+}
+
+.item_procesos {
+  border-left: solid 5px black;
+  padding-left: 23px;
+}
+
+.number_procesos {
+  background-color: black;
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  border-radius: 100%;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 0px;
+  left: -43px;
+}
+
+.container_footer {
+  background-image: url('../img/wave.svg');
+  width: 100%;
+  height: 500px;
+  background-position: 0 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* modal opciones movile */
+
+.modal_options {
+  position: fixed;
+  background: linear-gradient(
+    180deg,
+    rgb(197, 197, 197) 1%,
+    rgb(219, 219, 219) 65%,
+    rgb(245, 245, 245) 100%
+  );
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1000;
+  transition: opacity 1s ease-out;
+}
+.modal_options li a {
+  color: black;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+.modal_options i {
+  position: absolute;
+  top: 2%;
+  right: 5%;
+  color: var(--white);
+}
+.modal_options ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap:  8px;
+}
+
+/* fin  modal opciones movile */
+
+
+/* boton de subida */
+
+.container_buttons {
+  position: fixed;
+  right: 8%;
+  bottom: 2%;
+  z-index: 101;
+}
+
+.container_buttons i {
+  cursor: pointer;
+}
+
+/* fin boton de subida */
+
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+
+body::-webkit-scrollbar {
+  width: 8px;
+  height: 5px;
+  margin-top: 20px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(92, 92, 92, 0.599);
+  border-radius: 10px;
+}
+body:-webkit-scrollbar-track {
+  background: red;
+  border-radius: 4px;
+}
