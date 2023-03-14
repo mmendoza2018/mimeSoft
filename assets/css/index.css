@@ -163,9 +163,9 @@ h5 {
   position: fixed;
   background: linear-gradient(
     180deg,
-    rgb(197, 197, 197) 1%,
-    rgb(219, 219, 219) 65%,
-    rgb(245, 245, 245) 100%
+    rgb(186, 186, 186) 1%,
+    rgb(218, 218, 218) 65%,
+    rgb(252, 252, 252) 100%
   );
   top: 0;
   bottom: 0;
